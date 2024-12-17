@@ -35,7 +35,7 @@ A Chrome extension that allows users to convert selected text into beautifully s
 
 1. Clone this repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/rayluo88/quote-image-generator.git
    cd quote-image-generator
    ```
 
@@ -111,6 +111,10 @@ src/
 
 - Chrome (Latest version)
 - Other Chromium-based browsers (Edge, Brave, etc.)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
