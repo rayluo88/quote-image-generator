@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Quote Image Generator",
+  "version": "1.0.0",
+  "description": "Convert selected text into beautiful quote images",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["editor.html", "assets/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 
